@@ -1,7 +1,5 @@
 "use client";
 
-import { useChat } from "@ai-sdk/react";
-import { useEffect, useRef } from "react";
 import Terminal from "./components/terminal";
 
 export default function Page() {
