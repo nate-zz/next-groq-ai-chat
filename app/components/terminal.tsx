@@ -24,7 +24,6 @@ export default function Terminal() {
     ]);
   }, []);
 
-  console.log(messages);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const getMessageClassname = (role: string) => {
