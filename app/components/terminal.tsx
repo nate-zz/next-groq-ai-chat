@@ -6,6 +6,7 @@ import { useEffect, useRef } from "react";
 import { JetBrains_Mono as MONO } from "next/font/google";
 
 const codeFont = MONO({
+  subsets: ["latin"],
   weight: ["400", "800"],
 });
 
@@ -31,8 +32,8 @@ export default function Terminal() {
   };
 
   useEffect(() => {
-    inputRef.current?.scrollIntoView()
-  }, [messages])
+    inputRef.current?.scrollIntoView();
+  }, [messages]);
 
   return (
     <div
